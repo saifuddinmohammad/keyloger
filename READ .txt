@@ -1,0 +1,6 @@
+ LIBRARY USED 
+    1.pynput:-
+    This library  capture keystrokes and save them to a  followed text file
+MODULES IMPORTED
+    1.key 
+    2.Listener

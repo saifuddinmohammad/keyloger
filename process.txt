@@ -1,0 +1,23 @@
+                IMPORTING THE MODULES
+STEP 1: The program  starts by importing the necessary modules, "Key"and "Listener" from the "pynput.keyboard" module.
+
+                                      
+STEP 2: Then create  ("keys[]" )list is initialized as an empty list.       This list will be used to store the pressed keys.
+                DECLARING THE FUNCTIONS	
+
+STEP 3:The("on_press") function is defined. This function is called when a key is pressed. It takes the pressed key as an argument and appends it to the ("keys[]") list.
+
+STEP 4: The ("on_release") function is defined. This function is called when a key is released.
+It takes the released key as an argument. In this function, the   script opens the "log.txt" file in write mode ('w'),
+and then writes the content of the keys list to the file using the "writelines method". 
+The keys list is converted to a STRING before writing it to the file.
+
+
+STEP 5:The ("with")statement is used to create a LISTENER object. 
+The Listener object is responsible for monitoring the keyboard events and calling the appropriate callback functions        
+(on_press and on_release) when a key is pressed or released.
+
+
+STEP 6 :In side the "with" statement, the ("listener.join()") method is called.This method starts the listener and waits for it to finish.
+It essentially blocks the program's execution and keeps it running until the listener is stopped or interrupted.
+
